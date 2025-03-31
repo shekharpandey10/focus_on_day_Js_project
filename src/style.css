@@ -48,8 +48,15 @@ h1{
     width: 620px;
     border-radius: 15px;
     margin:30px 0;
+    
 }
-
+.completed input[type="text"] {
+    text-decoration: line-through;
+    color: green;
+}
+.visibility{
+    visibility: none;
+}
 .task-bar{
     height: 90px;
     width: 600px;
@@ -105,4 +112,29 @@ footer span{
     font-size: 10px;
     line-height: 15px;
     font-weight: none;
+}
+.hidden{
+    display: none;
+}
+.disable{
+    pointer-events: none;
+    background-color: white;
+}
+
+#progress-value{
+    background-color: green;
+    height: 100%;
+    border-radius: 15px;
+    width:0%;
+    overflow: hidden;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: width 0.2s ease-in-out;
+}
+#progress-value span{
+padding-left: 15px;
+min-width: max-content;
+color: white;
 }
